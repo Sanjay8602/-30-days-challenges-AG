@@ -1,3 +1,6 @@
+#Problem: https://leetcode.com/problems/image-smoother/description/
+
+
 class Solution:
     def imageSmoother(self, img: List[List[int]]) -> List[List[int]]:
         m, n = len(img), len(img[0])

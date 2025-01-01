@@ -1,3 +1,6 @@
+# Problem: https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/description/
+
+
 class Solution:
     def incremovableSubarrayCount(self, nums: List[int]) -> int:
         def is_strictly_increasing(arr):
