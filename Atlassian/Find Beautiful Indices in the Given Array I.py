@@ -7,6 +7,7 @@ class Solution:
         n= len(s)
         la= len(a)
         lb= len(b)
+        
         indices_a = [i for i in range(n - la + 1) if s[i:i + la] == a]
         indices_b = [j for j in range(n - lb + 1) if s[j:j + lb] == b]
 
