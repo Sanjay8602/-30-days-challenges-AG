@@ -1,0 +1,20 @@
+#Problem: 532. K-diff Pairs in an Array
+#Link: https://leetcode.com/problems/k-diff-pairs-in-an-array/
+
+class Solution:
+    def findPairs(self, nums: List[int], k: int) -> int:
+        if k<0:
+            return 0
+        num_count= {}
+        for num in nums:
+            num_count[num] = num_count.get(num, 0) + 1
+        result = 0
+        if k == 0:
+            for count in num_count.values():
+                if count > 1:
+                    result += 1
+        else:
+            for num in num_count:
+                if num + k in num_count:
+                    result += 1
+        return result
